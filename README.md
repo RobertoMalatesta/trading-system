@@ -14,4 +14,16 @@ It has been developed for both retail traders and institutional hedge funds to a
 * Daily summary of profit/loss: Provide a daily summary of your profit/loss.
 * Performance status report: Provide a performance status of your current trades.
 
-## That's all. Leave a star if it helped you!
+## How to run
+```
+mvn package && \
+java --enable-preview -jar runner/target/runner-1.0-SNAPSHOT.jar
+``` 
+
+### Using Docker
+
+```
+docker build . -t trading-engine-temp
+docker run --rm -p 8080:8080 trading-engine
+```
+
